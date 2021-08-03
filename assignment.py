@@ -58,7 +58,7 @@ def score(DNAStr, s):
 
 
 def bruteForceAlgo(DNAStr, t, n, l):
-    data = it.product(range(n - l), repeat=t)
+    data = it.product(range(n-l+1), repeat=t)
     bestScore = 0
     bestMotif = []
     for s in data:
